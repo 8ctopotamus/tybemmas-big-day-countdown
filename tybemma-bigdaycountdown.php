@@ -22,9 +22,7 @@ function tybemmasbdcd_register_shortcode() {
 }
 
 function tybemmasbdcd_countdown() {
-	$countdown = '<p>should be here...</p>';
-	$countdown .= '<div id="tybemmas-big-day-countdown"></div>';
-	return $countdown;
+	return '<div id="tybemmas-big-day-countdown"></div>';
 }
 
 ?>

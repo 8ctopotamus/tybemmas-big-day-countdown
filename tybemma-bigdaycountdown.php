@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/8ctopotamus/tybemmas-big-day-countdown
  * Description: Learn how to create shortcodes and retrieve data from the web.
  * Version: 1.0
- * Author: zenva
+ * Author: 8ctopotamus
  * Author URI: https://github.com/8ctopotamus/
  * License: GPL2
  */

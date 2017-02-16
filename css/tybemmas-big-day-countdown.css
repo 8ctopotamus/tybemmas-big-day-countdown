@@ -1,0 +1,40 @@
+/**
+* Project : simply-countdown
+* File : simplyCountdown.theme.default
+* Date : 27/06/2015
+* Author : Vincent Loy <vincent.loy1@gmail.com>
+*/
+#tybemmas-big-day-countdown {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-around;
+}
+#tybemmas-big-day-countdown > .simply-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background: #c8b46f;
+  transform: rotate(45deg);
+}
+
+#tybemmas-big-day-countdown > .simply-section > div {
+  transform: rotate(-45deg);
+}
+#tybemmas-big-day-countdown > .simply-section .simply-amount,
+#tybemmas-big-day-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+#tybemmas-big-day-countdown > .simply-section .simply-amount {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+#tybemmas-big-day-countdown > .simply-section .simply-word {
+  font-size: 1.2em;
+}

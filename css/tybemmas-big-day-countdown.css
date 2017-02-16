@@ -1,27 +1,35 @@
-/**
-* Project : simply-countdown
-* File : simplyCountdown.theme.default
-* Date : 27/06/2015
-* Author : Vincent Loy <vincent.loy1@gmail.com>
-*/
 #tybemmas-big-day-countdown {
-  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
 }
 #tybemmas-big-day-countdown > .simply-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
   width: 100px;
   background: #c8b46f;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
-
 #tybemmas-big-day-countdown > .simply-section > div {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 #tybemmas-big-day-countdown > .simply-section .simply-amount,
 #tybemmas-big-day-countdown > .simply-section .simply-word {
@@ -29,12 +37,25 @@
   text-align: center;
   color: #fff;
 }
-
 #tybemmas-big-day-countdown > .simply-section .simply-amount {
   font-weight: bold;
   font-size: 3em;
+  line-height: 1em;
 }
-
 #tybemmas-big-day-countdown > .simply-section .simply-word {
   font-size: 1.2em;
+}
+
+@media (max-width: 450px) {
+  #tybemmas-big-day-countdown > .simply-section {
+    height: 60px;
+    width: 60px;
+  }
+  #tybemmas-big-day-countdown > .simply-section .simply-amount {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+  #tybemmas-big-day-countdown > .simply-section .simply-word {
+    font-size: .8em;
+  }
 }
